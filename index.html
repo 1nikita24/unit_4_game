@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Playfair+Display|Poppins|Quicksand|Raleway|Work+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12 title">
+            Crystal Collector Game
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 subtitle">
+            How to Play the Crystal Collector Game
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 instructions">
+            - You will be given a random number at the start of the game.
+            <br/> - There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+            <br/> - You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+            <br/> - The value of each crystal is hidden from you until you click on it.
+            <br/> - Each time when the game starts, the game will change the values of each crystal.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 crystals">
+            <p class="subtitle">Click on the Crystals to Play!</p>
+            <br/>
+            <img src="assets/images/redCrystal.png" id="red" width="100" height="100" alt="Red Crystal" />
+            <br/>
+            <img src="assets/images/blueCrystal.png" id="blue" width="100" height="100" alt="Blue Crystal" />
+            <br/>
+            <img src="assets/images/yellowCrystal.png" id="yellow" width="100" height="100" alt="Yellow Crystal" />
+            <br/>
+            <img src="assets/images/greenCrystal.png" id="green" width="100" height="100" alt="Green Crystal" />
+        </div>
+        <div class="col-md-12 scoreRecord">
+            <p class="subtitle2">Number to Win:</p> <span id="randomNumber" class="score"></span>
+            <p class="subtitle2">Your Score:</p> <span id="totalScore" class="score"></span>
+            <p class="subtitle2">Wins:</p> <span id="numberOfWins" class="score"></span>
+            <p class="subtitle2">Losses:</p> <span id="numberOfLosses" class="score"></span>
+        </div>
+    </div>
+</body>
+
+</html>
